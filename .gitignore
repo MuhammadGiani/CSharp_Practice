@@ -1,0 +1,96 @@
+## Ignore Visual Studio temporary files, build results, and user-specific files
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio 2022 / 2019 user settings
+.vs/
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Backup and temporary files
+*_i.c
+*_p.c
+*.tmp
+*.bak
+*.old
+*.log
+
+# Auto-generated files
+*.generated.cs
+*.g.cs
+*.g.i.cs
+
+# Compiled binary files
+*.exe
+*.dll
+*.pdb
+*.cache
+*.obj
+
+# Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.coverage
+*.coveragexml
+
+# NuGet packages
+*.nupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+*.snupkg
+# If you want to store NuGet restore files in repo, remove the line above
+
+# .NET Core specific
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET / IIS Express specific (just in case)
+iisexpress/
+*.vspscc
+*.vssscc
+
+# Resharper / Rider
+_ReSharper*/
+*.DotSettings.user
+.idea/
+
+# JetBrains Rider settings
+.idea/
+*.sln.iml
+
+# Visual Studio Code
+.vscode/
+
+# Windows files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# GitHub files
+*.orig
+
+# Backup archives
+*.zip
+*.tar.gz
+*.rar
+
+# Entity Framework migrations (optional: uncomment if you regenerate DB often)
+# Migrations/
+
+# Local secrets and environment files
+*.env
+appsettings.Development.json
+secrets.json
