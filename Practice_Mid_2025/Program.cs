@@ -56,6 +56,10 @@ for (int i = 0; i < totalEmployees; i++)
     }
 }
 
+for (int i=0; i<totalEmployees; i++)
+{
+    Console.WriteLine($"Average Sales for Employee {i + 1} : {Average(salesData[i])}");
+}
 
 
 double Average(double[] data)
