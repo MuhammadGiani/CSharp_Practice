@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
-//Console.WriteLine("Hello, World!");
+using Practice_Mid_2025;
+
+//************************************Average marks 3 subjects*************************************************
 //Console.WriteLine("Enter Your Name: ");
 //string? userName = Console.ReadLine();
 
@@ -37,37 +39,50 @@
 //Console.WriteLine($"Your Avg marks are {avg} and your grade is {grade}.");
 
 
-//Jagged Arrays Employee Sales Store
+////*****************************Jagged Arrays Employee Sales Store****************************************
 
-Console.Write("Enter Number of employees in your store: ");
-int totalEmployees = int.Parse(Console.ReadLine()!);
+//Console.Write("Enter Number of employees in your store: ");
+//int totalEmployees = int.Parse(Console.ReadLine()!);
 
-double[][] salesData = new double[totalEmployees][];
+//double[][] salesData = new double[totalEmployees][];
 
-for (int i = 0; i < totalEmployees; i++)
-{
-    Console.WriteLine($"Enter Total Number of Sales for {i + 1} employee:");
-    int totalSalesEachEmp = int.Parse(Console.ReadLine()!);
-    salesData[i] = new double[totalSalesEachEmp];
-    for (int j = 0; j < totalSalesEachEmp; j++)
-    {
-        Console.Write($"Employee {i+1} - Sale {j + 1} : ");
-        salesData[i][j] = double.Parse(Console.ReadLine()!);
-    }
-}
+//for (int i = 0; i < totalEmployees; i++)
+//{
+//    Console.WriteLine($"Enter Total Number of Sales for {i + 1} employee:");
+//    int totalSalesEachEmp = int.Parse(Console.ReadLine()!);
+//    salesData[i] = new double[totalSalesEachEmp];
+//    for (int j = 0; j < totalSalesEachEmp; j++)
+//    {
+//        Console.Write($"Employee {i+1} - Sale {j + 1} : ");
+//        salesData[i][j] = double.Parse(Console.ReadLine()!);
+//    }
+//}
 
-for (int i=0; i<totalEmployees; i++)
-{
-    Console.WriteLine($"Average Sales for Employee {i + 1} : {Average(salesData[i]):F2}");
-}
+//for (int i=0; i<totalEmployees; i++)
+//{
+//    Console.WriteLine($"Average Sales for Employee {i + 1} : {Average(salesData[i]):F2}");
+//}
 
 
-double Average(double[] data)
-{
-    double sum = 0;
-    for (int i = 0;i < data.Length; i++)
-    {
-        sum += data[i];
-    }
-    return sum / data.Length;
-}
+//double Average(double[] data)
+//{
+//    double sum = 0;
+//    for (int i = 0;i < data.Length; i++)
+//    {
+//        sum += data[i];
+//    }
+//    return sum / data.Length;
+//}
+
+
+
+Vehicle myVehicle = new Vehicle { Brand = "Generic"};
+myVehicle.ShowInfo();
+
+Car myCar = new Car { Brand="Toyota", noOfDoors=4};
+myCar.ShowInfo();
+
+Truck myTruck = new Truck { Brand="Volvo", loadCapacity=2000};
+myTruck.ShowInfo();
+
+
